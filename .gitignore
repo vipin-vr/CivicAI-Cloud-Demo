@@ -1,0 +1,53 @@
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# SQLite databases and their journal/WAL sidecars
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Citizen uploads and other generated user content
+uploads/
+user-data/
+*.upload
+
+# Python virtual environments and caches
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local backups, logs, and temporary files
+.phase*-backup-*/
+.homepage*-backup-*/
+*.bak
+*.log
+*.tmp
+*.temp
+~$*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Additional backup exclusions
+backups/
+backup/
+*-backup/
+*-backup-*/
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
